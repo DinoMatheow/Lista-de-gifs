@@ -15,8 +15,6 @@ export class HomePageComponent {
     return this.gifsService.gifList;
   }
 
-serchTag( tag:string){
-  this.gifsService.searchTag( tag )
-}
+
 
 }

@@ -58,7 +58,7 @@ async searchTag( tag:string ):Promise<void>{
 
  const params = new HttpParams()
  .set('api_key', this.apiKey)
- .set('limit', 5)
+ .set('limit', 10)
  .set('q', tag)
 
  this.http.get<SearchResponse>(`${this.serviceUrl}/search`, {params} )
